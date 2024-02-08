@@ -1,172 +1,190 @@
+:root {
+    --fthin: 100;
+    --fsmall: 300;
+    --fregular: 400;
+    --flarge: 500;
+    --fxlarge: 700;
 
-:root{
-    --fthin:100;
-    --fsmall:300;
-    --fregular:400;
-    --flarge:500;
-    --fxlarge:700;
-
-    --clrPrimary:#c4c9ca;
-    --clrOpposite:#770268;
-    --clrHighligh:#687702;
-    --clrgrey:grey;
-    --clrwhite:white;
+    --clrPrimary: #c4c9ca;
+    --clrOpposite: #770268;
+    --clrHighligh: #687702;
+    --clrgrey: grey;
+    --clrwhite: white;
 
 
 }
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
     margin-inline: auto;
-  
+
 }
+
 @keyframes animate {
-    from{
-    }
-    to{
+    from {}
+
+    to {
         transform: translateX(-90vw);
-    }}
-    @keyframes animate2 {
-        from{
-        }
-        to{
-            transform: translateX(90vw);
-        }}
-header{
+    }
+}
+
+@keyframes animate2 {
+    from {}
+
+    to {
+        transform: translateX(90vw);
+    }
+}
+
+header {
     display: flex;
     width: auto;
     background-color: var(--clrwhite);
     padding-block-end: 1rem;
     padding-inline-start: 1rem;
     justify-content: space-between;
-    
+
 }
 
-.header-img{
+.header-img {
     display: block;
-    margin-left:1rem;
-    margin-top:1rem;
-    height:3rem;
-    
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 3rem;
+
 }
 
-nav{
-    
-    margin:auto;
+nav {
+
+    margin: auto;
 }
 
-.nav-links{
-    margin-top:2rem;
-    
-    color:var(--clrOpposite);
-    display:flex;
-    gap:1rem;
+.nav-links {
+    margin-top: 2rem;
+
+    color: var(--clrOpposite);
+    display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: flex-start;
-   
-   align-items: flex-end;
-  
+
+    align-items: flex-end;
+
 }
-.nav-links>li{
+
+.nav-links>li {
     list-style: none;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
-    color:var(--clrOpposite);
+    color: var(--clrOpposite);
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.promo{
+.promo {
     /* flex-basis: 0.5; */
     display: flex;
     padding-block: 1rem;
     flex-direction: column;
 }
-.promo div{
+
+.promo div {
     background-color: var(--clrHighligh);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
 }
-.promo>div:nth-child(1){
-    
+
+.promo>div:nth-child(1) {
+
     animation-name: animate2;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.promo>div:nth-child(2){
+
+.promo>div:nth-child(2) {
     background-color: var(--clrOpposite);
-    margin-left:auto;
+    margin-left: auto;
     transform: translateX(0vw);
     animation-name: animate;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.promo>div:nth-child(3){
+
+.promo>div:nth-child(3) {
     border-radius: 30px;
     width: 100%;
     height: 50%;
 }
-.promo>div:nth-child(3)>img{
+
+.promo>div:nth-child(3)>img {
     border-radius: 30px;
     object-fit: contain;
     width: 100%;
     height: 100%;
- 
+
 }
 
 
-.blog{
+.blog {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
-@media screen and (max-width : 500px )  {
-    .blog{
-        
+
+@media screen and (max-width : 500px) {
+    .blog {
+
         grid-template-columns: 1fr;
 
     }
 
-    
+
 }
-.card a{
+
+.card a {
     background-color: var(--clrHighligh);
     border-radius: .6rem;
     width: 100%;
     color: var(--clrwhite)
 }
 
-footer{
+footer {
     margin-block: 2rem;
-    display:grid; /*to display the two footer colummns */
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    /*to display the two footer colummns */
+    grid-template-columns: repeat(2, 1fr);
 }
-footer img{
+
+footer img {
     display: block;
     width: 1.5rem;
 }
 
-footer{
+footer {
     font-weight: var(--fthin);
     color: var(--clrHighligh);
     background-color: var(--clrwhite);
