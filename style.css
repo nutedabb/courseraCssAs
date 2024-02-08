@@ -27,10 +27,7 @@ body{
     flex-direction: column;
     max-width: 90vw;
     margin-inline: auto;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
-    
+  
 }
 @keyframes animate {
     from{
@@ -47,10 +44,7 @@ body{
 header{
     display: flex;
     width: auto;
-    background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-
-
+    background-color: var(--clrwhite);
     padding-block-end: 1rem;
     padding-inline-start: 1rem;
     justify-content: space-between;
@@ -135,13 +129,6 @@ main{
 
     
 }
-.card{
-    background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-border:#0093E9;
-
-
-}
 .card a{
     background-color: var(--clrHighligh);
     border-radius: .6rem;
@@ -162,8 +149,5 @@ footer img{
 footer{
     font-weight: var(--fthin);
     color: var(--clrHighligh);
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    
-
+    background-color: var(--clrwhite);
 }
